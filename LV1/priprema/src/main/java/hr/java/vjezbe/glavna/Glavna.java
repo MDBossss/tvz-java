@@ -145,9 +145,9 @@ public class Glavna {
         Integer tempOcjena = input.nextInt();
         input.nextLine();
 
-        System.out.print("Unesite datum i vrijeme ispita u formatu (dd.MM.yyyy HH:mm): ");
+        System.out.print("Unesite datum i vrijeme ispita u formatu (dd.MM.yyyyTHH:mm): ");
         String stringTempDatumIVrijeme = input.nextLine();
-        LocalDateTime tempDatumIVrijeme = LocalDateTime.parse(stringTempDatumIVrijeme, DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm"));
+        LocalDateTime tempDatumIVrijeme = LocalDateTime.parse(stringTempDatumIVrijeme, DateTimeFormatter.ofPattern("dd.MM.yyyy'T'HH:mm"));
 
 
 
